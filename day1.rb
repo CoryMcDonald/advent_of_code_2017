@@ -1,15 +1,9 @@
 
 def solve(number)
-  temp = number.to_s
   result = 0
+  temp = number.to_s
   temp.chars.each_with_index do |x, index|
-    last_match = false
-    if x == temp.chars[index-1]
-      result = result + x.to_i
-      last_match = true
-    end
-
-    puts "current char #{x} result is #{result}"
+    result += x.to_i if x == temp.chars[index-1]
   end
 
   result
