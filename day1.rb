@@ -18,7 +18,7 @@ def part2(number)
     result += x.to_i if x == list[edge, length][index]
   end
 
-  result*2
+  result * 2
 end
 
 puts part2('123123')
