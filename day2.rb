@@ -1,5 +1,7 @@
 def solve(input)
-  input.map { |x| x.max - x.min }.inject(:+)
+  input
+    .map { |x| x.max - x.min }
+    .inject(:+)
 end
 
 def solve2(input)
